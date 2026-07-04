@@ -72,19 +72,19 @@ export default function LandingPage() {
     {
       title: "Cyberpunk Metropolis",
       prompt: "A stunning ultra-realistic cyberpunk city with towering neon skyscrapers and wet reflective streets.",
-      img: "/cyberpunk.jpg",
+      img: "/seedance-ai/cyberpunk.jpg",
       model: "Seedance v2"
     },
     {
       title: "Steampunk Waterfall",
       prompt: "A gorgeous steampunk floating island in the sky, golden hour light cascading waterfalls.",
-      img: "/steampunk.jpg",
+      img: "/seedance-ai/steampunk.jpg",
       model: "Kling 1.5 Pro"
     },
     {
       title: "Nebula Astronaut",
       prompt: "Cinematic astronaut floating in space near a giant purple and pink stellar nebula.",
-      img: "/astronaut.jpg",
+      img: "/seedance-ai/astronaut.jpg",
       model: "Runway Gen-3"
     }
   ];
@@ -225,7 +225,7 @@ export default function LandingPage() {
           <GlassCard className="p-2.5 border-cyber-purple/35 bg-[#0d0b18]/50 shadow-2xl relative group neon-border-purple">
             <div className="aspect-video rounded-xl overflow-hidden relative bg-zinc-900 border border-zinc-800">
               <img
-                src="/cyberpunk.jpg"
+                src="/seedance-ai/cyberpunk.jpg"
                 alt="Cyberpunk Metropolis Hero Preview"
                 className="w-full h-full object-cover opacity-85"
               />
