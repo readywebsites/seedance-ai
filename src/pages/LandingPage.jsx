@@ -72,19 +72,19 @@ export default function LandingPage() {
     {
       title: "Cyberpunk Metropolis",
       prompt: "A stunning ultra-realistic cyberpunk city with towering neon skyscrapers and wet reflective streets.",
-      img: "/seedance-ai/cyberpunk.jpg",
+      img: "/cyberpunk.jpg",
       model: "Seedance v2"
     },
     {
       title: "Steampunk Waterfall",
       prompt: "A gorgeous steampunk floating island in the sky, golden hour light cascading waterfalls.",
-      img: "/seedance-ai/steampunk.jpg",
+      img: "/steampunk.jpg",
       model: "Kling 1.5 Pro"
     },
     {
       title: "Nebula Astronaut",
       prompt: "Cinematic astronaut floating in space near a giant purple and pink stellar nebula.",
-      img: "/seedance-ai/astronaut.jpg",
+      img: "/astronaut.jpg",
       model: "Runway Gen-3"
     }
   ];
