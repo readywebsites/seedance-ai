@@ -59,7 +59,7 @@ def process_video_generation(self, job_id):
         'cameraMotion': job.camera_motion,
         'stylePreset': job.style_preset,
         'seed': job.seed,
-        'fps': job.fps
+        'fps': getattr(job, 'fps', 24)
     }
 
     try:
