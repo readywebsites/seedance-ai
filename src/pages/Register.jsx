@@ -47,7 +47,7 @@ export default function Register() {
             <span className="font-heading font-bold text-2xl tracking-tight text-gradient">SEEDANCE AI</span>
           </Link>
           <h2 className="text-xl font-heading font-bold text-zinc-100">Create Your Account</h2>
-          <p className="text-zinc-500 text-xs mt-1">Get 20 free credits and start generating instant videos.</p>
+          <p className="text-zinc-500 text-xs mt-1">Get 1000 free credits and start generating instant videos.</p>
         </div>
 
         <GlassCard className="p-8 border-zinc-800/80 bg-zinc-900/60 shadow-2xl">

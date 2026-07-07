@@ -10,7 +10,7 @@ export default function Billing() {
   const [successMsg, setSuccessMsg] = useState('');
 
   const plans = [
-    { name: "Free", price: "$0", credits: 20, desc: "Basic test drive", highlight: false },
+    { name: "Free", price: "$0", credits: 1000, desc: "Basic test drive", highlight: false },
     { name: "Starter", price: "$19", credits: 300, desc: "For creators & designers", highlight: false },
     { name: "Pro", price: "$49", credits: 1000, desc: "For professional studios", highlight: true },
     { name: "Business", price: "$149", credits: 4000, desc: "For custom pipelines", highlight: false }

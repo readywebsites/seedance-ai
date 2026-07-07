@@ -27,7 +27,7 @@ class User(AbstractUser):
     username = models.CharField(max_length=150, unique=True)
     email = models.EmailField(unique=True)
     name = models.CharField(max_length=255, blank=True)
-    credits = models.PositiveIntegerField(default=20)
+    credits = models.PositiveIntegerField(default=1000)
     role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='user')
     is_verified = models.BooleanField(default=False)
 

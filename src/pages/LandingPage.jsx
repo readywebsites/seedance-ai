@@ -93,7 +93,7 @@ export default function LandingPage() {
     {
       name: "Free",
       price: "$0",
-      credits: "20 / mo",
+      credits: "1,000 / mo",
       desc: "Perfect for testing the AI generation engine.",
       features: ["Seedance v2 Standard", "480p Output Resolution", "3 Second Videos", "Community Support"],
       cta: "Try Now",
