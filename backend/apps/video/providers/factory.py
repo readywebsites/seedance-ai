@@ -1,5 +1,6 @@
 from .seedance import SeedanceProvider
 from .base import BaseVideoProvider
+from video_gen.providers.runway import RunwayProvider
 
 class ProviderFactory:
     """
@@ -9,8 +10,10 @@ class ProviderFactory:
     @staticmethod
     def get_provider(model_name: str) -> BaseVideoProvider:
         model_name = model_name.lower()
-        if 'seedance' in model_name:
+        if 'runway' in model_name:
+            return RunwayProvider()
+        elif 'seedance' in model_name:
             return SeedanceProvider()
         else:
-            # Default to Seedance as standard provider
-            return SeedanceProvider()
+            # Default to Runway as standard provider
+            return RunwayProvider()

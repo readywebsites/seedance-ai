@@ -3,7 +3,7 @@ from celery import shared_task
 from django.contrib.auth import get_user_model
 from django.conf import settings
 from .models import VideoJob, Transaction, Notification
-from apps.video.providers.factory import ProviderFactory
+from video_gen.providers.factory import ProviderFactory
 
 logger = logging.getLogger(__name__)
 User = get_user_model()

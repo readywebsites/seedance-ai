@@ -25,4 +25,4 @@ class ProviderFactory:
             return PikaProvider()
         else:
             # Default fallback
-            return SeedanceProvider()
+            return RunwayProvider()
