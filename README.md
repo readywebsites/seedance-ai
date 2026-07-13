@@ -47,17 +47,21 @@ seedance/
 │   ├── requirements.txt           # Python dependencies
 │   └── Dockerfile                 # Backend container image build
 │
-├── src/                           # React 19 Frontend Codebase
-│   ├── components/                # Reusable UI Blocks (GlassCard, VideoPlayer, Sidebar, Navbar)
-│   ├── pages/                     # Main Views (LandingPage, Dashboard, Generator, Billing, Admin)
-│   ├── store/                     # Zustand state machines (authStore, videoStore)
-│   ├── index.css                  # Tailwind CSS v4 design tokens and coordinates
-│   └── App.jsx                    # React Router 6 Protected Routes
+├── frontend/                      # React 19 Frontend Codebase
+│   ├── src/                       # React 19 Frontend Source
+│   │   ├── components/            # Reusable UI Blocks (GlassCard, VideoPlayer, Sidebar, Navbar)
+│   │   ├── pages/                 # Main Views (LandingPage, Dashboard, Generator, Billing, Admin)
+│   │   ├── store/                 # Zustand state machines (authStore, videoStore)
+│   │   ├── index.css              # Tailwind CSS v4 design tokens and coordinates
+│   │   └── App.jsx                # React Router 6 Protected Routes
+│   ├── public/                    # Builtin mockup asset visual resources
+│   ├── nginx.conf                 # Reverse Proxy routing config
+│   ├── Dockerfile                 # Frontend container image build
+│   └── package.json               # Frontend dependencies
 │
-├── public/                        # Builtin mockup asset visual resources
 ├── docker-compose.yml             # Local Multi-Container Stack orchestrator
-├── nginx.conf                     # Reverse Proxy routing config
-├── Dockerfile                     # Frontend container image build
+├── nginx.conf                     # Reverse Proxy routing config (Legacy/root fallback)
+├── Dockerfile                     # Frontend container image build (Legacy/root fallback)
 └── README.md                      # Documentation
 ```
 
@@ -84,6 +88,9 @@ seedance/
 
 #### 1. Frontend Setup
 ```bash
+# Navigate to frontend
+cd frontend
+
 # Install NPM packages
 npm install
 

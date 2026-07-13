@@ -96,7 +96,7 @@ services:
 
   frontend:
     build:
-      context: .
+      context: ./frontend
     container_name: seedance_frontend
     ports:
       - "80:80"
